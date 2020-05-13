@@ -53,6 +53,8 @@ type NodeAPI interface {
 	PendingCXReceipts() []*types.CXReceiptsProof
 	GetNodeBootTime() int64
 	PeerConnectivity() (int, int, int)
+	GetConsensusPhase() string
+	GetConsensusMode() string
 }
 
 // New creates a new Harmony object (including the

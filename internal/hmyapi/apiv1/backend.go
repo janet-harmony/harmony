@@ -91,4 +91,6 @@ type Backend interface {
 	GetLastCrossLinks() ([]*types.CrossLink, error)
 	GetLatestChainHeaders() *block.HeaderPair
 	GetNodeMetadata() commonRPC.NodeMetadata
+	GetConsensusPhase() string 
+	GetConsensusMode() string
 }
